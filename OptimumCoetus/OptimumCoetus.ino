@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 Name:		OptimumCoetus.ino
 Created:	9/5/2017 2:43:53 PM
 Author: 	Paulo Salvatore
@@ -18,7 +18,7 @@ Servo servoY;
 int portaServoY = 10;
 
 int botaoLiberarMovimento = 4;
-bool liberarMovimentoAutomatico = false; // Caso queira liberar o movimento automaticamente logo após ele acabar
+bool liberarMovimentoAutomatico = false; // Caso queira liberar o movimento automaticamente logo apÃ³s ele acabar
 bool botaoLiberarMovimentoLiberado = true;
 
 unsigned long tempoAtual = 0;
@@ -27,27 +27,27 @@ bool movimentoIniciado = false;
 
 int atencaoAtivarMovimento = 60;
 
-// Variáveis do Motor X
+// VariÃ¡veis do Motor X
 int posicaoMotorX;
-int posicaoMotorXInicial = 0; // Em qual posição o motor X irá começar
+int posicaoMotorXInicial = 0; // Em qual posiÃ§Ã£o o motor X irÃ¡ comeÃ§ar
 int intervaloMovimentoMotorX = 10; // Quantos graus cada passo vai andar
-int posicaoFinalMotorX = 180; // Qual o ângulo final do motor X
+int posicaoFinalMotorX = 180; // Qual o Ã¢ngulo final do motor X
 
-// Variáveis do Motor Y
+// VariÃ¡veis do Motor Y
 int posicaoMotorY;
-int posicaoMotorYInicial = 0; // Em qual posição o motor Y irá começar
+int posicaoMotorYInicial = 0; // Em qual posiÃ§Ã£o o motor Y irÃ¡ comeÃ§ar
 int intervaloMovimentoMotorY = 10; // Quantos graus cada passo vai andar
-int posicaoFinalMotorY = 180; // Qual o ângulo final do motor Y
+int posicaoFinalMotorY = 180; // Qual o Ã¢ngulo final do motor Y
 
 /*
-* intervaloMovimentacaoMotor = A cada quantos milissegundos você quer
-* que ele faça uma movimentação no motor.
+* intervaloMovimentacaoMotor = A cada quantos milissegundos vocÃª quer
+* que ele faÃ§a uma movimentaÃ§Ã£o no motor.
 */
 int intervaloMovimentacaoMotor = 500;
 
 /*
-* delayAguardando = Quantos milissegundos você quer que ele fique
-* esperando após terminar a movimentação
+* delayAguardando = Quantos milissegundos vocÃª quer que ele fique
+* esperando apÃ³s terminar a movimentaÃ§Ã£o
 */
 long delayAguardando = 5000;
 long delayMovimentacao = intervaloMovimentacaoMotor * (posicaoFinalMotorX / intervaloMovimentoMotorX);
